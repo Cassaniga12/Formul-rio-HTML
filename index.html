@@ -16,7 +16,16 @@
             <p>Olá! 💜 Para que eu possa conhecer melhor suas necessidades e realizar seu atendimento com segurança, peço que responda às perguntas abaixo antes da consulta.</p>
         </header>
 
-        <form id="anamneseForm" action="https://formspree.io/f/xljevkna" method="POST" enctype="multipart/form-data">
+        <form action="https://api.web3forms.com/submit" method="POST">
+  
+            <input type="hidden" name="access_key" value="4091e068-e966-465b-9526-a70fb9b80672">
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+            <button type="submit">Submit Form</button>
+        </form>
+
+            <input type="checkbox" name="botcheck" style="display: none;">
 
             <fieldset>
                 <legend>👤 1. DADOS PESSOAIS</legend>
