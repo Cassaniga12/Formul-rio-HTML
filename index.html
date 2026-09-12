@@ -16,14 +16,16 @@
             <p>Olá! 💜 Para que eu possa conhecer melhor suas necessidades e realizar seu atendimento com segurança, peço que responda às perguntas abaixo antes da consulta.</p>
         </header>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-  
-            <input type="hidden" name="access_key" value="4091e068-e966-465b-9526-a70fb9b80672">
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <textarea name="message" required></textarea>
-            <button type="submit">Submit Form</button>
-        </form>
+        <!-- INÍCIO DO FORMULÁRIO COM VÍNCULO AO WEB3FORMS -->
+    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+
+        <!-- 1. CHAVE DE VÍNCULO (Cole a chave que recebeu no e-mail) -->
+        <input type="hidden" name="access_key" value="4091e068-e966-465b-9526-a70fb9b80672">
+        
+        <!-- CONFIGURAÇÕES DE E-MAIL -->
+        <input type="hidden" name="subject" value="Nova Ficha de Anamnese Recebida">
+        <input type="hidden" name="from_name" value="Anamnese Podologia">
+        <input type="checkbox" name="botcheck" style="display: none;">
 
             <input type="checkbox" name="botcheck" style="display: none;">
 
@@ -221,15 +223,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>📸 8. FOTOS</legend>
-                <p class="field-desc">Se possível, envie fotos nítidas do(s) pé(s) ou da unha que será avaliada, de preferência com boa iluminação e sem filtros.</p>
-                <div class="field-group">
-                    <input type="file" id="fotos" name="fotos[]" multiple accept="image/*">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>✅ 9. CONFIRMAÇÃO</legend>
+                <legend>✅ 8. CONFIRMAÇÃO</legend>
                 <p class="field-desc">Declaro que as informações fornecidas acima são verdadeiras e completas e autorizo seu registro para fins de avaliação e acompanhamento podológico.</p>
                 
                 <div class="field-group-inline">
