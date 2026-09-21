@@ -3,253 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anamnese Digital - Podologia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="GC 2.jpg">
+    <title>Biografia de Michael Jordan</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>👣 ANAMNESE DIGITAL – PODOLOGIA</h1>
-            <h2>Graziela Cassaniga – Podóloga</h2>
-            <p>Olá! 💜 Para que eu possa conhecer melhor suas necessidades e realizar seu atendimento com segurança, peço que responda às perguntas abaixo antes da consulta.</p>
-        </header>
+    <header class="header">
+        <h1>Michael Jordan</h1>
+        <h3>E sua trajetoria de Criança a Lenda</h3>
+    </header>
 
-        <!-- INÍCIO DO FORMULÁRIO COM VÍNCULO AO WEB3FORMS -->
-    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+   <main class="container"> 
 
-        <!-- 1. CHAVE DE VÍNCULO (Cole a chave que recebeu no e-mail) -->
-        <input type="hidden" name="access_key" value="4091e068-e966-465b-9526-a70fb9b80672">
-        
-        <!-- CONFIGURAÇÕES DE E-MAIL -->
-        <input type="hidden" name="subject" value="Nova Ficha de Anamnese Recebida">
-        <input type="hidden" name="from_name" value="Anamnese Podologia">
-        <input type="checkbox" name="botcheck" style="display: none;">
+        <div class="card perfil">
+            <div class="perfil-info">
+                <img src="./assets/img/MJ kid.jpg" alt="Michael Jordan Criança">
+                <h2>Quem é ele?</h2>
+                <p><strong>Nascimento:</strong> 17 de fevereiro de 1963 (Brooklyn, NY)</p>
+                <p><strong>Posição:</strong> Ala-Armador</p>
+                <p><strong>Time Principal:</strong> Chicago Bulls (#23)</p>
+                <p>Michael Jordan é amplamente considerado o maior jogador de basquete de todos os tempos. Ele revolucionou a NBA nas décadas de 1980 e 1990.</p>
+            </div>
+        </div>
 
-            <input type="checkbox" name="botcheck" style="display: none;">
+        <div class="card">
+            <h2>Suas principais conquistas</h2>
+            <img src="./assets/img/mj 4.webp" alt="Michael Jordan Campeão">
+            <ul>
+                <li>💯 <strong>Seu Maior recorde é de</strong> 30,1 pontos por partida</li>
+                <li>🏆 <strong>6x Campeão da NBA</strong> (Chicago Bulls)</li>
+                <li>🏅 <strong>6x MVP das Finais</strong></li>
+                <li>⭐ <strong>5x MVP da Temporada Regular</strong></li>
+                <li>🥇 <strong>2x Medalhista de Ouro Olímpico</strong> (1984 e 1992 - Dream Team)</li>
+                <li>🏀 <strong>14x All-Star da NBA</strong></li>
+            </ul>
+        </div>
 
-            <fieldset>
-                <legend>👤 1. DADOS PESSOAIS</legend>
-                
-                <div class="field-group">
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
+        <div class="card">
+            <h2>Michael e sua Trajetoria até a aposentadoria</h2>
+            <img src="./assets/img/mj 5.jpg" alt="Michael Jordan Adulto">
+            <div class="linha-tempo">
+                <p><strong>Início:</strong> Se destacou na Universidade da Carolina do Norte (UNC), vencendo o campeonato nacional de 1982.</p>
+                <p><strong>Era Bulls:</strong> Foi selecionado em 1984 pelo Chicago Bulls, onde conquistou dois "three-peats" (três títulos seguidos: 1991-1993 e 1996-1998).</p>
+                <p><strong>Aposentadoria & Retorno:</strong> Aposentou-se para jogar beisebol pela primeira vez em Outubro de 1993, na segunda vez em Janeiro de 1999 dizendo que estava mal mentalmente e voltou aos Bulls e finalizou sua carreira no Washington Wizards em 2003.</p>
+            </div>
+        </div>
 
-                <div class="field-group-inline">
-                    <div class="field-group">
-                        <label for="nascimento">Data de nascimento:</label>
-                        <input type="date" id="nascimento" name="nascimento" required>
-                    </div>
-                    <div class="field-group">
-                        <label for="telefone">Telefone (WhatsApp):</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-                    </div>
-                </div>
+        <div class="card cartaz">
+            <div class="cartaz-texto"> 
+                <h2>Jordan X Nike</h2>
+                <img src="./assets/img/air jo.webp" alt="Jordan e Nike Patrocinio">
+                <p>Além das vitórias, Jordan criou a famosa marca de tênis <strong>Air Jordan</strong> em parceria com a Nike e estrelou o filme <em>Space Jam (1996)</em>, tornando-se um ícone global da cultura pop e dos negócios.</p>
+            </div>
+        </div>
+    </main>
 
-                <div class="field-group">
-                    <label for="profissao">Profissão:</label>
-                    <input type="text" id="profissao" name="profissao">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>🦶 2. MOTIVO DA CONSULTA</legend>
-                
-                <div class="field-group">
-                    <label for="motivo">Qual o principal motivo da sua consulta?</label>
-                    <textarea id="motivo" name="motivo" rows="3" required></textarea>
-                </div>
-
-                <div class="field-group">
-                    <label>Está sentindo dor ou desconforto nos pés?</label>
-                    <div class="options">
-                        <label><input type="radio" name="dor" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="dor" value="Sim"> Sim</label>
-                    </div>
-                    <label for="dor_local" class="sub-label">Se sim, onde?</label>
-                    <input type="text" id="dor_local" name="dor_local">
-                </div>
-
-                <div class="field-group">
-                    <label for="tempo_problema">Há quanto tempo apresenta esse problema?</label>
-                    <input type="text" id="tempo_problema" name="tempo_problema">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>💅 3. HISTÓRICO DOS PÉS E UNHAS</legend>
-                <label>Você já teve ou tem atualmente:</label>
-                <div class="checkbox-grid">
-                    <label><input type="checkbox" name="historico_pes[]" value="Unha encravada"> Unha encravada</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Micose nas unhas"> Micose nas unhas</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Micose na pele"> Micose na pele</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Calos"> Calos</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Calosidades"> Calosidades</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Fissuras/rachaduras"> Fissuras/rachaduras</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Verrugas"> Verrugas</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Bolhas"> Bolhas</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Alteração cor/espessura"> Alteração na cor/espessura</label>
-                    <label><input type="checkbox" name="historico_pes[]" value="Feridas"> Feridas</label>
-                </div>
-                <div class="field-group" style="margin-top: 10px;">
-                    <label for="outros_historico">Outro:</label>
-                    <input type="text" id="outros_historico" name="outros_historico">
-                </div>
-
-                <div class="field-group">
-                    <label>Já realizou algum procedimento de podologia anteriormente?</label>
-                    <div class="options">
-                        <label><input type="radio" name="procedimento_anterior" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="procedimento_anterior" value="Sim"> Sim</label>
-                    </div>
-                    <label for="qual_procedimento" class="sub-label">Se sim, qual?</label>
-                    <input type="text" id="qual_procedimento" name="qual_procedimento">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>🩺 4. SAÚDE</legend>
-                <label>Possui ou já teve alguma das condições abaixo?</label>
-                <div class="checkbox-grid">
-                    <label><input type="checkbox" name="saude[]" value="Diabetes"> Diabetes</label>
-                    <label><input type="checkbox" name="saude[]" value="Pressão alta"> Pressão alta</label>
-                    <label><input type="checkbox" name="saude[]" value="Problemas circulatórios"> Problemas circulatórios</label>
-                    <label><input type="checkbox" name="saude[]" value="Problemas cardíacos"> Problemas cardíacos</label>
-                    <label><input type="checkbox" name="saude[]" value="Problemas renais"> Problemas renais</label>
-                    <label><input type="checkbox" name="saude[]" value="Problemas de coagulação"> Problemas de coagulação</label>
-                    <label><input type="checkbox" name="saude[]" value="Neuropatia"> Neuropatia / Perda de sensibilidade</label>
-                    <label><input type="checkbox" name="saude[]" value="Varizes"> Varizes</label>
-                    <label><input type="checkbox" name="saude[]" value="Nenhuma"> Nenhuma</label>
-                </div>
-                <div class="field-group" style="margin-top: 10px;">
-                    <label for="outras_condicoes">Outra condição:</label>
-                    <input type="text" id="outras_condicoes" name="outras_condicoes">
-                </div>
-
-                <div class="field-group">
-                    <label>Já passou por alguma cirurgia nos pés ou pernas?</label>
-                    <div class="options">
-                        <label><input type="radio" name="cirurgia" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="cirurgia" value="Sim"> Sim</label>
-                    </div>
-                    <label for="qual_cirurgia" class="sub-label">Se sim, qual?</label>
-                    <input type="text" id="qual_cirurgia" name="qual_cirurgia">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>💊 5. MEDICAMENTOS E ALERGIAS</legend>
-                
-                <div class="field-group">
-                    <label>Faz uso contínuo de medicamentos?</label>
-                    <div class="options">
-                        <label><input type="radio" name="medicamentos" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="medicamentos" value="Sim"> Sim</label>
-                    </div>
-                    <label for="quais_medicamentos" class="sub-label">Se sim, quais?</label>
-                    <input type="text" id="quais_medicamentos" name="quais_medicamentos">
-                </div>
-
-                <div class="field-group">
-                    <label>Usa anticoagulante ou medicamento que afete a coagulação?</label>
-                    <div class="options">
-                        <label><input type="radio" name="anticoagulante" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="anticoagulante" value="Sim"> Sim</label>
-                    </div>
-                    <label for="qual_anticoagulante" class="sub-label">Se sim, qual?</label>
-                    <input type="text" id="qual_anticoagulante" name="qual_anticoagulante">
-                </div>
-
-                <div class="field-group">
-                    <label>Possui alergia a medicamentos, produtos ou materiais?</label>
-                    <div class="options">
-                        <label><input type="radio" name="alergia" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="alergia" value="Sim"> Sim</label>
-                    </div>
-                    <label for="qual_alergia" class="sub-label">Se sim, qual?</label>
-                    <input type="text" id="qual_alergia" name="qual_alergia">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>🦶 6. CUIDADOS E HÁBITOS</legend>
-                
-                <div class="field-group">
-                    <label>Costuma usar sapatos fechados por muitas horas?</label>
-                    <div class="options">
-                        <label><input type="radio" name="sapato_fechado" value="Nao"> Não</label>
-                        <label><input type="radio" name="sapato_fechado" value="Sim"> Sim</label>
-                    </div>
-                </div>
-
-                <div class="field-group">
-                    <label>Costuma retirar cutículas ou cortar as unhas muito curtas?</label>
-                    <div class="options">
-                        <label><input type="radio" name="corta_curto" value="Nao"> Não</label>
-                        <label><input type="radio" name="corta_curto" value="Sim"> Sim</label>
-                    </div>
-                </div>
-
-                <div class="field-group">
-                    <label>Utiliza algum produto para tratar as unhas ou a pele dos pés?</label>
-                    <div class="options">
-                        <label><input type="radio" name="usa_produto" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="usa_produto" value="Sim"> Sim</label>
-                    </div>
-                    <label for="qual_produto" class="sub-label">Se sim, qual?</label>
-                    <input type="text" id="qual_produto" name="qual_produto">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>⚠️ 7. INFORMAÇÕES IMPORTANTES</legend>
-                
-                <div class="field-group">
-                    <label>Possui atualmente alguma ferida, sangramento, secreção ou inflamação nos pés?</label>
-                    <div class="options">
-                        <label><input type="radio" name="ferida_atual" value="Nao" checked> Não</label>
-                        <label><input type="radio" name="ferida_atual" value="Sim"> Sim</label>
-                    </div>
-                    <label for="onde_ferida" class="sub-label">Se sim, onde?</label>
-                    <input type="text" id="onde_ferida" name="onde_ferida">
-                </div>
-
-                <div class="field-group">
-                    <label for="info_extra">Tem alguma condição de saúde ou informação que considere importante para o seu atendimento?</label>
-                    <textarea id="info_extra" name="info_extra" rows="3"></textarea>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>✅ 8. CONFIRMAÇÃO</legend>
-                <p class="field-desc">Declaro que as informações fornecidas acima são verdadeiras e completas e autorizo seu registro para fins de avaliação e acompanhamento podológico.</p>
-                
-                <div class="field-group-inline">
-                    <div class="field-group">
-                        <label for="nome_confirmacao">Nome (Assinatura Digital):</label>
-                        <input type="text" id="nome_confirmacao" name="nome_confirmacao" required>
-                    </div>
-                    <div class="field-group">
-                        <label for="data_confirmacao">Data:</label>
-                        <input type="date" id="data_confirmacao" name="data_confirmacao" required>
-                    </div>
-                </div>
-            </fieldset>
-
-            <button type="submit" class="submit-btn">Enviar Anamnese</button>
-
-        </form>
-
-        <footer>
-            <p>💜 <strong>Obrigada pelas informações!</strong><br>
-            Elas são importantes para que seu atendimento seja realizado de forma individualizada e segura.</p>
-            <hr>
-            <p><strong>Graziela Cassaniga – Podóloga</strong><br>
-            👣 <em>Cuidando dos seus pés com carinho e segurança.</em></p>
-        </footer>
-    </div>
+    <footer>
+        <p>Trabalho AG de Programação 3°TRI</p>
+    </footer>
 
 </body>
 </html>
